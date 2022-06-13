@@ -57,6 +57,5 @@ Usage:
 ### How the script works: ###
 The file has to be in the directory from which you want to extract two random files from.
 
-The script first lists all items with the 'ls' command. 
-Then it takes the output of that and shuffels it in a random order with the 'shuf' command.
-To only get two random files, the argument '-n 2' is added to the 'shuf' command. This causes it to only output two files.
+The script first lists all items with the 'ls' command. Then it takes the output from that and shuffels it in a random order with the 'shuf' command.
+To only get two random files, the argument '-n 2' is added to the 'shuf' command. Then the output gets printed, which are two random files from the directory you ran the script in.
