@@ -5,7 +5,7 @@ __Use of ’jou’ and ’jouw’ in Dutch tweets__
 
 
 ## twitter_jou_jouw.py ##
-The code used to find the tweets with 'jou' or 'jouw' in them.
+The code is used to find the tweets with 'jou' or 'jouw' in them.
 Prints the the query words 'jou'/'jouw' with a context of three words on each side.
 'jou'/'jouw' are highlighted when printing in to the screen.
 
@@ -38,3 +38,25 @@ Almost at the end a new list is made that only concludes the word 'jou' or 'jouw
 Then there's another for-loop. This one is only used for printing the right things to the screen, with colored 'jou'/'jouw' for the ease of use when manually annotating the tweets.
 
 All the way at the end there are some print statements to show the counting variables that kept track of the amount of items it ran through. They are printed with a context to keep them apart easily.
+
+
+## find_random_files.sh ##
+The script is used to find two random files in a directory.
+
+### Argument: ###
+This script does not take any arguments.
+
+Only if file permission to run the script isn't added:
+
+	$ chmod +x find_random_files.sh
+
+Usage: 
+
+	$ ./find_random_files.sh
+
+### How the script works: ###
+The file has to be in the directory from which you want to extract two random files from.
+
+The script first lists all items with the 'ls' command. 
+Then it takes the output of that and shuffels it in a random order with the 'shuf' command.
+To only get two random files, the argument '-n 2' is added to the 'shuf' command. This causes it to only output two files.
